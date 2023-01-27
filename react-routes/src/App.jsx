@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import About from './components/pages/About';
 import { GoalDetails, Goals } from './components/pages/Goals';
 import Home from './components/pages/Home';
 import NotFound from './components/pages/NotFound';
@@ -12,6 +13,7 @@ const App = () => {
         <main>
           <Routes>
             <Route index element={<Home />} />
+            <Route path="/about" element={<About />} />
 
             <Route path="/goals">
               <Route index element={<Goals />} />
